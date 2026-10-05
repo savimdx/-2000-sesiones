@@ -1,0 +1,8 @@
+{
+  "name": "+2000 Sesiones de Entrenamiento de Fútbol Listas para Aplicar",
+  "description": "Biblioteca completa con más de 2000 sesiones de entrenamiento de fútbol listas para aplicar en el campo. Diseñada para entrenadores, técnicos y formadores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
