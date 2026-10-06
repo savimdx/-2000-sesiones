@@ -96,9 +96,10 @@ export const BONUSES: BonusItem[] = [
     description: "Colección completa de tareas tácticas y situaciones reales de juego adaptadas al desarrollo formativo en etapas de iniciación y fútbol base.",
     originalPrice: 450,
     tag: "TÁCTICA Y FÚTBOL BASE",
-    image: "https://i.ibb.co/r26sb2Tg/Chat-GPT-Image-24-de-set-de-2026-10-26-12.png",
-    fallbackImage: "/images/bono_250_fiches.webp",
+    image: "/images/bono_500_tacticos.webp",
+    fallbackImage: "https://i.ibb.co/r26sb2Tg/Chat-GPT-Image-24-de-set-de-2026-10-26-12.png",
     fallbackSources: [
+      "/images/bono_500_tacticos.webp",
       "https://i.ibb.co/r26sb2Tg/Chat-GPT-Image-24-de-set-de-2026-10-26-12.png",
       "/images/bono_250_fiches.webp"
     ]
@@ -110,9 +111,10 @@ export const BONUSES: BonusItem[] = [
     description: "Mejora la capacidad aeróbica, la potencia y el fondo físico de tus jugadores sin alejar nunca el balón del entrenamiento.",
     originalPrice: 399,
     tag: "RESISTENCIA CON BALÓN",
-    image: "https://i.ibb.co/nMhVd9Sv/Chat-GPT-Image-29-de-ago-de-2026-20-28-37.png",
-    fallbackImage: "/images/bono_50_physique.webp",
+    image: "/images/bono_100_resistencia.webp",
+    fallbackImage: "https://i.ibb.co/nMhVd9Sv/Chat-GPT-Image-29-de-ago-de-2026-20-28-37.png",
     fallbackSources: [
+      "/images/bono_100_resistencia.webp",
       "https://i.ibb.co/nMhVd9Sv/Chat-GPT-Image-29-de-ago-de-2026-20-28-37.png",
       "/images/bono_50_physique.webp"
     ]
@@ -124,9 +126,10 @@ export const BONUSES: BonusItem[] = [
     description: "Optimiza cada sesión con conos, picas, aros y escaleras de ritmo para un trabajo físico completo, dinámico y motivador.",
     originalPrice: 350,
     tag: "PEQUEÑO EQUIPAMIENTO",
-    image: "https://i.ibb.co/27R0MsBF/Chat-GPT-Image-29-de-ago-de-2026-20-35-08.png",
-    fallbackImage: "/images/bono_petit_materiel.webp",
+    image: "/images/bono_60_equipamiento.webp",
+    fallbackImage: "https://i.ibb.co/27R0MsBF/Chat-GPT-Image-29-de-ago-de-2026-20-35-08.png",
     fallbackSources: [
+      "/images/bono_60_equipamiento.webp",
       "https://i.ibb.co/27R0MsBF/Chat-GPT-Image-29-de-ago-de-2026-20-35-08.png",
       "/images/bono_petit_materiel.webp"
     ]
@@ -138,9 +141,10 @@ export const BONUSES: BonusItem[] = [
     description: "Hojas de planificación listas para rellenar, organizar semanas completas, registrar alineaciones, cargas de trabajo y objetivos tácticos.",
     originalPrice: 350,
     tag: "PLANIFICACIÓN Y ESTRUCTURA",
-    image: "https://i.ibb.co/cX77hXxq/Chat-GPT-Image-29-de-ago-de-2026-20-37-24.png",
-    fallbackImage: "/images/bono_10_semaines.webp",
+    image: "/images/bono_24_plantillas.webp",
+    fallbackImage: "https://i.ibb.co/cX77hXxq/Chat-GPT-Image-29-de-ago-de-2026-20-37-24.png",
     fallbackSources: [
+      "/images/bono_24_plantillas.webp",
       "https://i.ibb.co/cX77hXxq/Chat-GPT-Image-29-de-ago-de-2026-20-37-24.png",
       "/images/bono_10_semaines.webp"
     ]
@@ -152,9 +156,10 @@ export const BONUSES: BonusItem[] = [
     description: "Las tareas, rondos de posesión, transiciones y mecanismos de ataque combinativo inspirados en el modelo de juego de la Selección Española.",
     originalPrice: 499,
     tag: "METODOLOGÍA DE ÉLITE",
-    image: "https://i.ibb.co/XkkxWdZ5/comprimida.png",
-    fallbackImage: "/images/bono_5.webp",
+    image: "/images/bono_98_seleccion.webp",
+    fallbackImage: "https://i.ibb.co/XkkxWdZ5/comprimida.png",
     fallbackSources: [
+      "/images/bono_98_seleccion.webp",
       "https://i.ibb.co/XkkxWdZ5/comprimida.png",
       "/images/bono_5.webp"
     ]
@@ -166,12 +171,12 @@ export const BONUSES: BonusItem[] = [
     description: "Accede a una videoteca masiva con más de 1000 tareas y ejercicios explicados en movimiento: circuitos, tareas técnicas y táctica en acción.",
     originalPrice: 799,
     tag: "VIDEOTECA COMPLETA (+1000 VIDEOS)",
-    image: "https://i.ibb.co/bg3pg300/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png",
-    fallbackImage: "/images/bono_1000_videos.webp",
+    image: "/images/bono_1000_videos_nuevo.webp",
+    fallbackImage: "https://i.ibb.co/bg3pg300/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png",
     fallbackSources: [
+      "/images/bono_1000_videos_nuevo.webp",
       "https://i.ibb.co/bg3pg300/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png",
-      "/images/bono_1000_videos.webp",
-      "/images/bono_1000_videos.png"
+      "/images/bono_1000_videos.webp"
     ]
   },
   {
@@ -181,9 +186,10 @@ export const BONUSES: BonusItem[] = [
     description: "Manual completo de acondicionamiento físico moderno: fuerza funcional, velocidad, potencia anaeróbica y protocolos de prevención de lesiones.",
     originalPrice: 450,
     tag: "PREPARACIÓN FÍSICA Y SALUD",
-    image: "https://i.ibb.co/FLt4HBRX/Chat-GPT-Image-29-de-ago-de-2026-20-46-58.png",
-    fallbackImage: "/images/bono_prep_physique.webp",
+    image: "/images/bono_prep_fisica.webp",
+    fallbackImage: "https://i.ibb.co/FLt4HBRX/Chat-GPT-Image-29-de-ago-de-2026-20-46-58.png",
     fallbackSources: [
+      "/images/bono_prep_fisica.webp",
       "https://i.ibb.co/FLt4HBRX/Chat-GPT-Image-29-de-ago-de-2026-20-46-58.png",
       "/images/bono_prep_physique.webp"
     ]
@@ -195,9 +201,10 @@ export const BONUSES: BonusItem[] = [
     description: "La metodología táctica del juego de posición, presión inmediata tras pérdida, superioridades numéricas y triangulaciones al tercer hombre.",
     originalPrice: 399,
     tag: "JUEGO DE POSICIÓN Y PRESIÓN",
-    image: "https://i.ibb.co/9HCcjhZt/Chat-GPT-Image-24-de-set-de-2026-10-33-16.png",
-    fallbackImage: "/images/bono_guardiola.webp",
+    image: "/images/bono_guardiola_nuevo.webp",
+    fallbackImage: "https://i.ibb.co/9HCcjhZt/Chat-GPT-Image-24-de-set-de-2026-10-33-16.png",
     fallbackSources: [
+      "/images/bono_guardiola_nuevo.webp",
       "https://i.ibb.co/9HCcjhZt/Chat-GPT-Image-24-de-set-de-2026-10-33-16.png",
       "/images/bono_guardiola.webp"
     ]
@@ -209,9 +216,10 @@ export const BONUSES: BonusItem[] = [
     description: "Mejora el control en espacios reducidos, la toma de decisiones instantánea, la precisión bajo presión y las combinaciones rápidas del futsal.",
     originalPrice: 399,
     tag: "ESPACIOS REDUCIDOS Y FÚTBOL SALA",
-    image: "https://i.ibb.co/j9BFPsdd/Ejercicios-Adicionales-de-F-tbol-Sala.png",
-    fallbackImage: "/images/bono_futsal.webp",
+    image: "/images/bono_futsal_adicional.webp",
+    fallbackImage: "https://i.ibb.co/j9BFPsdd/Ejercicios-Adicionales-de-F-tbol-Sala.png",
     fallbackSources: [
+      "/images/bono_futsal_adicional.webp",
       "https://i.ibb.co/j9BFPsdd/Ejercicios-Adicionales-de-F-tbol-Sala.png",
       "/images/bono_futsal.webp"
     ]
@@ -223,9 +231,10 @@ export const BONUSES: BonusItem[] = [
     description: "Programa de preparación física específico para guardametas: potencia de salto, agilidad, reflejos visuales, juego aéreo y coordinación específica.",
     originalPrice: 450,
     tag: "ESPECIAL ENTRENAMIENTO DE PORTEROS",
-    image: "https://i.ibb.co/svDT74sM/Chat-GPT-Image-29-de-ago-de-2026-22-24-02.png",
-    fallbackImage: "/images/bono_gardiens.webp",
+    image: "/images/bono_80_portero.webp",
+    fallbackImage: "https://i.ibb.co/svDT74sM/Chat-GPT-Image-29-de-ago-de-2026-22-24-02.png",
     fallbackSources: [
+      "/images/bono_80_portero.webp",
       "https://i.ibb.co/svDT74sM/Chat-GPT-Image-29-de-ago-de-2026-22-24-02.png",
       "/images/bono_gardiens.webp"
     ]

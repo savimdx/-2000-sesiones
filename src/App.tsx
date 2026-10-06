@@ -52,28 +52,28 @@ const safeLocalStorage = {
 
 const PRODUCT_IMAGES = [
   {
-    src: "https://i.ibb.co/QvzsLbLM/Screenshot-20260829-210037-Adobe-Acrobat.jpg",
-    fallback: "/images/sample_1.webp",
+    src: "/images/print_sesion_1.webp",
+    fallback: "https://i.ibb.co/QvzsLbLM/Screenshot-20260829-210037-Adobe-Acrobat.jpg",
     alt: "Ficha de entrenamiento técnico"
   },
   {
-    src: "https://i.ibb.co/xSbVVzc4/Screenshot-20260829-210055-Adobe-Acrobat.jpg",
-    fallback: "/images/sample_2.webp",
+    src: "/images/print_sesion_2.webp",
+    fallback: "https://i.ibb.co/xSbVVzc4/Screenshot-20260829-210055-Adobe-Acrobat.jpg",
     alt: "Ficha de ejercicios tácticos con balón"
   },
   {
-    src: "https://i.ibb.co/LDvZV3v0/Screenshot-20260829-210115-Adobe-Acrobat.jpg",
-    fallback: "/images/sample_3.webp",
+    src: "/images/print_sesion_3.webp",
+    fallback: "https://i.ibb.co/LDvZV3v0/Screenshot-20260829-210115-Adobe-Acrobat.jpg",
     alt: "Ficha de preparación física integrada"
   },
   {
-    src: "https://i.ibb.co/jPB4bR85/Screenshot-20260829-210132-Adobe-Acrobat.jpg",
-    fallback: "/images/sample_4.webp",
+    src: "/images/print_sesion_4.webp",
+    fallback: "https://i.ibb.co/jPB4bR85/Screenshot-20260829-210132-Adobe-Acrobat.jpg",
     alt: "Ficha de situaciones de finalización"
   },
   {
-    src: "https://i.ibb.co/RTGPgVdC/Screenshot-20260829-210150-Adobe-Acrobat.jpg",
-    fallback: "/images/sample_5.webp",
+    src: "/images/print_sesion_5.webp",
+    fallback: "https://i.ibb.co/RTGPgVdC/Screenshot-20260829-210150-Adobe-Acrobat.jpg",
     alt: "Ficha de juego de posición y rondos"
   }
 ];
@@ -246,9 +246,10 @@ export default function App() {
           {/* Hero Pack Image */}
           <div className="my-6 flex justify-center w-full max-w-3xl sm:max-w-4xl relative mx-auto">
             <OptimizedImage 
-              src="https://i.ibb.co/ksT9pstk/Chat-GPT-Image-29-de-ago-de-2026-07-40-17.png" 
-              fallbackSrc="/images/hero_pack.webp"
+              src="/images/hero_2000_sesiones.webp" 
+              fallbackSrc="https://i.ibb.co/ksT9pstk/Chat-GPT-Image-29-de-ago-de-2026-07-40-17.png"
               fallbackSources={[
+                "/images/hero_2000_sesiones.webp",
                 "https://i.ibb.co/ksT9pstk/Chat-GPT-Image-29-de-ago-de-2026-07-40-17.png",
                 "/images/hero_pack.webp"
               ]}
@@ -685,9 +686,10 @@ export default function App() {
             {/* Product image */}
             <div className="flex justify-center mb-8 relative w-full min-h-[300px] sm:min-h-[420px] md:min-h-[480px]">
               <OptimizedImage
-                src="https://i.ibb.co/ksT9pstk/Chat-GPT-Image-29-de-ago-de-2026-07-40-17.png"
-                fallbackSrc="/images/hero_pack.webp"
+                src="/images/hero_2000_sesiones.webp"
+                fallbackSrc="https://i.ibb.co/ksT9pstk/Chat-GPT-Image-29-de-ago-de-2026-07-40-17.png"
                 fallbackSources={[
+                  "/images/hero_2000_sesiones.webp",
                   "https://i.ibb.co/ksT9pstk/Chat-GPT-Image-29-de-ago-de-2026-07-40-17.png",
                   "/images/hero_pack.webp"
                 ]}
@@ -734,10 +736,6 @@ export default function App() {
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-4.5 h-4.5 text-orange-500 shrink-0 stroke-[3.5] mt-0.5" />
-                <span>Formato 100% digital listo para consultar o imprimir</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-4.5 h-4.5 text-orange-500 shrink-0 stroke-[3.5] mt-0.5" />
                 <span>Material práctico y listo para aplicar en el campo</span>
               </div>
               <div className="flex items-start gap-3">
@@ -765,17 +763,12 @@ export default function App() {
                   -90%
                 </span>
               </div>
-              <div className="w-full flex items-center justify-center py-2 sm:py-5">
+              <div className="w-full flex items-center justify-center py-2 sm:py-5 overflow-hidden">
                 <div
-                  style={{ fontFamily: "'Arial Black', 'Montserrat', Impact, sans-serif" }}
-                  className="animate-price-glow inline-flex items-baseline justify-center select-none text-orange-500 tracking-tight"
+                  style={{ fontFamily: "'Montserrat', 'Arial Black', Impact, sans-serif" }}
+                  className="text-center select-none text-orange-500 font-black tracking-tight whitespace-nowrap text-[2.2rem] min-[360px]:text-[2.7rem] min-[410px]:text-[3.25rem] sm:text-6xl md:text-7xl leading-none"
                 >
-                  <span className="text-2xl sm:text-3xl md:text-4xl font-black mr-1 sm:mr-1.5">
-                    MX$
-                  </span>
-                  <span className="text-[2.6rem] min-[360px]:text-[3.1rem] min-[400px]:text-[3.6rem] sm:text-6xl md:text-7xl font-black leading-none">
-                    156.60
-                  </span>
+                  {formattedPrice}
                 </div>
               </div>
             </div>

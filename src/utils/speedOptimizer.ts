@@ -4,30 +4,25 @@ import { loadedImageGlobalCache } from '../components/OptimizedImage';
 const imageMemoryCache = new Map<string, HTMLImageElement>();
 
 export const PRIORITY_IMAGES = [
-  '/images/hero_pack.webp',
-  '/images/sample_1.webp',
-  '/images/sample_2.webp',
-  '/images/bono_zidane.webp',
-  '/images/bono_neymar.webp',
-  '/images/bono_prep_physique.webp'
+  'https://i.ibb.co/ksT9pstk/Chat-GPT-Image-29-de-ago-de-2026-07-40-17.png',
+  'https://i.ibb.co/QvzsLbLM/Screenshot-20260829-210037-Adobe-Acrobat.jpg',
+  'https://i.ibb.co/xSbVVzc4/Screenshot-20260829-210055-Adobe-Acrobat.jpg',
+  'https://i.ibb.co/LDvZV3v0/Screenshot-20260829-210115-Adobe-Acrobat.jpg',
+  'https://i.ibb.co/r26sb2Tg/Chat-GPT-Image-24-de-set-de-2026-10-26-12.png',
+  'https://i.ibb.co/nMhVd9Sv/Chat-GPT-Image-29-de-ago-de-2026-20-28-37.png',
+  'https://i.ibb.co/27R0MsBF/Chat-GPT-Image-29-de-ago-de-2026-20-35-08.png'
 ];
 
 export const SECONDARY_IMAGES = [
-  '/images/sample_3.webp',
-  '/images/sample_4.webp',
-  '/images/sample_5.webp',
-  '/images/bono_mourinho.webp',
-  '/images/bono_guardiola.webp',
-  '/images/bono_250_fiches.webp',
-  '/images/bono_50_physique.webp',
-  '/images/bono_100_vitesse.webp',
-  '/images/bono_gardiens.webp',
-  '/images/bono_petit_materiel.webp',
-  '/images/bono_videos_football.webp',
-  '/images/bono_10_semaines_sans_fond.webp',
-  '/images/bono_10_semaines.webp',
-  '/images/bono_pre_saison.webp',
-  '/images/bono_entraineur_elite.webp',
+  'https://i.ibb.co/cX77hXxq/Chat-GPT-Image-29-de-ago-de-2026-20-37-24.png',
+  'https://i.ibb.co/XkkxWdZ5/comprimida.png',
+  'https://i.ibb.co/bg3pg300/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png',
+  'https://i.ibb.co/FLt4HBRX/Chat-GPT-Image-29-de-ago-de-2026-20-46-58.png',
+  'https://i.ibb.co/9HCcjhZt/Chat-GPT-Image-24-de-set-de-2026-10-33-16.png',
+  'https://i.ibb.co/j9BFPsdd/Ejercicios-Adicionales-de-F-tbol-Sala.png',
+  'https://i.ibb.co/svDT74sM/Chat-GPT-Image-29-de-ago-de-2026-22-24-02.png',
+  'https://i.ibb.co/jPB4bR85/Screenshot-20260829-210132-Adobe-Acrobat.jpg',
+  'https://i.ibb.co/RTGPgVdC/Screenshot-20260829-210150-Adobe-Acrobat.jpg',
   '/images/testimonial_1.webp',
   '/images/testimonial_2.webp',
   '/images/testimonial_3.webp',
@@ -95,9 +90,9 @@ export function initSpeedOptimizer(): void {
     };
 
     if ('requestIdleCallback' in window) {
-      (window as any).requestIdleCallback(preloadRest, { timeout: 200 });
+      (window as any).requestIdleCallback(preloadRest, { timeout: 100 });
     } else {
-      setTimeout(preloadRest, 30);
+      setTimeout(preloadRest, 10);
     }
   } catch {
     // Fail gracefully

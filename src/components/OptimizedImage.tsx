@@ -33,6 +33,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   ...props
 }) => {
   const [currentSrc, setCurrentSrc] = useState(src);
+  const [isLoaded, setIsLoaded] = useState(() => loadedImageGlobalCache.has(src));
   const [hasError, setHasError] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
   const fallbackListRef = useRef<string[]>([]);
@@ -50,11 +51,15 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
 
     setCurrentSrc(src);
     setHasError(false);
+    if (loadedImageGlobalCache.has(src)) {
+      setIsLoaded(true);
+    }
   }, [src, fallbackSrc, fallbackSources]);
 
   useEffect(() => {
     if (imgRef.current && imgRef.current.complete && imgRef.current.naturalWidth > 0) {
       loadedImageGlobalCache.add(currentSrc);
+      setIsLoaded(true);
     }
   }, [currentSrc]);
 
@@ -72,6 +77,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
 
   const handleLoad = () => {
     loadedImageGlobalCache.add(currentSrc);
+    setIsLoaded(true);
   };
 
   if (hasError) {
@@ -93,7 +99,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
       // @ts-ignore
       fetchPriority={fetchPriority}
       referrerPolicy={referrerPolicy}
-      className={className}
+      className={`${className} transition-opacity duration-200 ${isLoaded ? 'opacity-100' : 'opacity-90'}`}
       onLoad={handleLoad}
       onError={handleError}
       {...props}

@@ -16,8 +16,8 @@ export interface CountryPricingConfig {
   flag: string;
 }
 
-export const FIXED_OFFER_PRICE = 156.60;
-export const FIXED_OFFER_PRICE_FORMATTED = 'MX$156.60';
+export const FIXED_OFFER_PRICE = 155.44;
+export const FIXED_OFFER_PRICE_FORMATTED = 'MX$155.44';
 export const FIXED_CROSSED_PRICE_FORMATTED = 'MX$1,890.00';
 
 export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
