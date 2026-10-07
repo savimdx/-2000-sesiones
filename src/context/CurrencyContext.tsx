@@ -29,7 +29,7 @@ export interface CurrencyContextProps {
 const CurrencyContext = createContext<CurrencyContextProps | undefined>(undefined);
 
 export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Uniform offer fixed at MX$156.60
+  // Offer fixed at US$ 6,90
   const initialGeo = getInitialGeoState();
   const [activeGeo, setActiveGeo] = useState<GeoDetectionResult>(initialGeo);
 
@@ -43,17 +43,18 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   }, []);
 
-  // Standard formatter: formats in Mexican Pesos (e.g. 1890 -> "MX$1,890.00", 156.6 -> "MX$156.60")
+  // Formats as US$ X,XX (e.g. 6.9 -> "US$ 6,90", 69 -> "US$ 69,00")
   const convertAndFormat = useCallback((val: number): string => {
-    return `MX$${Number(val).toLocaleString('es-MX', {
+    const formattedNum = Number(val).toLocaleString('es-ES', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
-    })}`;
+    });
+    return `US$ ${formattedNum}`;
   }, []);
 
   const setCountry = useCallback((code: string) => {
     const normalized = normalizeCountry(code);
-    const config = COUNTRY_PRICING[normalized] || COUNTRY_PRICING.MX;
+    const config = COUNTRY_PRICING[normalized] || COUNTRY_PRICING.US;
     setActiveGeo({
       countryCode: normalized,
       config,
@@ -71,8 +72,8 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       value={{
         originalPrice: FIXED_OFFER_PRICE,
         convertedPrice: FIXED_OFFER_PRICE,
-        currencyCode: 'MXN',
-        currencySymbol: 'MX$',
+        currencyCode: 'USD',
+        currencySymbol: 'US$',
         formattedPrice: FIXED_OFFER_PRICE_FORMATTED,
         isConverting: false,
         rate: 1,
