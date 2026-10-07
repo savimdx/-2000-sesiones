@@ -67,7 +67,7 @@ export default function PurchaseModal({ isOpen, onClose }: PurchaseModalProps) {
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 my-5 space-y-2">
               <div className="flex justify-between items-center">
                 <span className="text-xs text-slate-700 font-medium">+2000 Sesiones de Entrenamiento de Fútbol (Digital)</span>
-                <span className="text-xs text-slate-400 line-through">{convertAndFormat(69)}</span>
+                <span className="text-xs text-slate-400 line-through">{convertAndFormat(287)}</span>
               </div>
               <div className="flex justify-between items-center text-emerald-600">
                 <span className="text-xs font-semibold">10 Bonos Exclusivos Incluidos (Videos, Manuales y Tareas)</span>
@@ -75,15 +75,15 @@ export default function PurchaseModal({ isOpen, onClose }: PurchaseModalProps) {
               </div>
               <div className="h-[1px] bg-slate-200 my-2" />
               <div className="flex justify-between items-center font-bold">
-                <span className="text-sm text-slate-800">Total a pagar hoy:</span>
+                <span className="text-sm sm:text-base text-slate-800">Total a pagar hoy:</span>
                 <span
                   style={{ fontFamily: "'Arial Black', 'Montserrat', Impact, sans-serif" }}
-                  className="text-3xl text-orange-500 font-black whitespace-nowrap"
+                  className="text-3xl sm:text-4xl md:text-5xl text-orange-500 font-black whitespace-nowrap"
                 >
                   {formattedPrice}
                 </span>
               </div>
-              <p className="text-[11px] text-slate-500 text-right font-medium">
+              <p className="text-xs sm:text-sm text-slate-600 text-right font-semibold whitespace-nowrap">
                 (Puedes pagar en tu moneda local)
               </p>
             </div>

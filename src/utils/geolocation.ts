@@ -18,7 +18,7 @@ export interface CountryPricingConfig {
 
 export const FIXED_OFFER_PRICE = 6.90;
 export const FIXED_OFFER_PRICE_FORMATTED = 'US$ 6,90';
-export const FIXED_CROSSED_PRICE_FORMATTED = 'US$ 69,00';
+export const FIXED_CROSSED_PRICE_FORMATTED = 'US$ 287,00';
 
 export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
   US: {

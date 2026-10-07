@@ -667,7 +667,7 @@ export default function App() {
           </h2>
 
           {/* Offer card with orange border */}
-          <div className="bg-white border-2 border-orange-500 rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-10 shadow-[0_20px_50px_rgba(249,115,22,0.12)] relative">
+          <div className="bg-white border-2 border-orange-500 rounded-[2rem] sm:rounded-[2.5rem] p-5 sm:p-10 shadow-[0_20px_50px_rgba(249,115,22,0.12)] relative">
             
             {/* OFERTA ESPECIAL overlap badge */}
             <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-orange-500 text-white font-black text-[10px] sm:text-xs uppercase px-5 py-1.5 rounded-full tracking-widest shadow-md">
@@ -754,20 +754,20 @@ export default function App() {
             {/* Price section */}
             <div id="precio-oferta" className="text-center space-y-4 mb-8 max-w-2xl mx-auto w-full px-2">
               <div className="flex items-center justify-center gap-3 sm:gap-4 text-sm sm:text-base md:text-lg font-bold text-slate-500">
-                <span>Antes <span className="text-red-500 font-extrabold line-through text-base sm:text-lg md:text-xl">{convertAndFormat(69)}</span></span>
+                <span>Antes <span className="text-red-500 font-extrabold line-through text-base sm:text-lg md:text-xl">{convertAndFormat(287)}</span></span>
                 <span className="bg-emerald-100 text-emerald-700 text-xs sm:text-sm font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
-                  -90%
+                  -97%
                 </span>
               </div>
-              <div className="w-full flex items-center justify-center py-2 sm:py-5 overflow-hidden">
+              <div className="w-full flex items-center justify-center py-2 sm:py-4">
                 <div
                   style={{ fontFamily: "'Montserrat', 'Arial Black', Impact, sans-serif" }}
-                  className="text-center select-none text-orange-500 font-black tracking-tight whitespace-nowrap text-[2.2rem] min-[360px]:text-[2.7rem] min-[410px]:text-[3.25rem] sm:text-6xl md:text-7xl leading-none"
+                  className="text-center select-none text-orange-500 font-black tracking-tight whitespace-nowrap text-[2.2rem] min-[360px]:text-[2.65rem] min-[400px]:text-[3.15rem] sm:text-6xl md:text-7xl leading-none"
                 >
                   {formattedPrice}
                 </div>
               </div>
-              <p className="text-xs sm:text-sm md:text-base text-slate-500 font-medium">
+              <p className="whitespace-nowrap text-xs min-[360px]:text-sm min-[400px]:text-base sm:text-lg md:text-xl text-slate-700 font-bold tracking-normal text-center">
                 (Puedes pagar en tu moneda local)
               </p>
             </div>
