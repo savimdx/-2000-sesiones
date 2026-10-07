@@ -10,7 +10,7 @@ interface PurchaseAlert {
 const PURCHASE_POOL: PurchaseAlert[] = [
   { name: "Carlos Mendoza", location: "Madrid, España", timeAgo: "hace 2 min" },
   { name: "Alejandro Gómez", location: "Buenos Aires, Argentina", timeAgo: "hace 4 min" },
-  { name: "Javier Delgado", location: "Barcelona, España", timeAgo: "hace 1 min" },
+  { name: "Marcelo Díaz", location: "Barcelona, España", timeAgo: "hace 1 min" },
   { name: "Diego Herrera", location: "Ciudad de México, México", timeAgo: "hace 5 min" },
   { name: "Mateo Silva", location: "Bogotá, Colombia", timeAgo: "hace 30 seg" },
   { name: "Andrés Fernández", location: "Sevilla, España", timeAgo: "hace 7 min" },

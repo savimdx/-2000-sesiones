@@ -264,9 +264,9 @@ export const TESTIMONIALS: TestimonialItem[] = [
   },
   {
     id: "test-3",
-    name: "Javier Delgado",
+    name: "Marcelo Díaz",
     role: "Profesor de Educación Física y Entrenador",
-    quote: "El contenido es increíblemente práctico y visual. No hay rodeos teóricos: vas directo al campo sabiendo exactamente cómo organizar el espacio y qué variantes aplicar. Desde la primera sesión mis jugadores lo notaron.",
+    quote: "El contenido es increíblemente completo y muy visual. No se queda solo en teoría kilométrica, vas directo a la cancha sabiendo qué hacer. Desde el primer día pude aplicar nuevas sesiones con mi equipo.",
     rating: 5,
     achievement: "✓ Aplicación práctica inmediata en el campo",
     avatarSeed: "jose",
