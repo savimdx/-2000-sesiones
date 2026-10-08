@@ -77,15 +77,12 @@ export default function PurchaseModal({ isOpen, onClose }: PurchaseModalProps) {
               <div className="flex justify-between items-center font-bold">
                 <span className="text-sm sm:text-base text-slate-800">Total a pagar hoy:</span>
                 <span
-                  style={{ fontFamily: "'Arial Black', 'Montserrat', Impact, sans-serif" }}
-                  className="text-3xl sm:text-4xl md:text-5xl text-orange-500 font-black whitespace-nowrap"
+                  style={{ fontFamily: "'Montserrat', sans-serif" }}
+                  className="text-3xl sm:text-4xl text-orange-500 font-black whitespace-nowrap tracking-tight"
                 >
                   {formattedPrice}
                 </span>
               </div>
-              <p className="text-xs sm:text-sm text-slate-600 text-right font-semibold whitespace-nowrap">
-                (Puedes pagar en tu moneda local)
-              </p>
             </div>
 
             <div className="space-y-4">

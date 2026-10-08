@@ -749,31 +749,33 @@ export default function App() {
             </div>
 
             {/* Divider */}
-            <div id="scroll-target-oferta" className="h-[1px] bg-slate-100 max-w-md mx-auto my-6" />
+            <div id="scroll-target-oferta" className="h-[1px] bg-slate-100 max-w-md mx-auto my-4" />
 
             {/* Price section */}
-            <div id="precio-oferta" className="text-center space-y-4 mb-8 max-w-2xl mx-auto w-full px-2">
-              <div className="flex items-center justify-center gap-3 sm:gap-4 text-sm sm:text-base md:text-lg font-bold text-slate-500">
-                <span>Antes <span className="text-red-500 font-extrabold line-through text-base sm:text-lg md:text-xl">{convertAndFormat(287)}</span></span>
-                <span className="bg-emerald-100 text-emerald-700 text-xs sm:text-sm font-black px-3 py-1 rounded-full uppercase tracking-wider shadow-sm">
+            <div id="precio-oferta" className="text-center space-y-2 mb-5 max-w-2xl mx-auto w-full px-2">
+              <div className="flex items-center justify-center gap-2.5 sm:gap-3 text-sm sm:text-base font-bold text-slate-500">
+                <span className="flex items-center gap-1.5">
+                  <span>Antes</span>
+                  <span className="text-red-500 font-extrabold text-xl sm:text-2xl line-through decoration-[2.5px] decoration-red-500">
+                    {convertAndFormat(287)}
+                  </span>
+                </span>
+                <span className="bg-emerald-100 text-emerald-700 text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
                   -97%
                 </span>
               </div>
-              <div className="w-full flex items-center justify-center py-2 sm:py-4">
+              <div className="w-full flex items-center justify-center py-0">
                 <div
-                  style={{ fontFamily: "'Montserrat', 'Arial Black', Impact, sans-serif" }}
-                  className="text-center select-none text-orange-500 font-black tracking-tight whitespace-nowrap text-[2.2rem] min-[360px]:text-[2.65rem] min-[400px]:text-[3.15rem] sm:text-6xl md:text-7xl leading-none"
+                  style={{ fontFamily: "'Montserrat', sans-serif" }}
+                  className="text-center select-none text-orange-500 font-black tracking-tighter whitespace-nowrap text-7xl min-[360px]:text-8xl sm:text-9xl md:text-[8.5rem] lg:text-[9.5rem] leading-none drop-shadow-sm transition-all"
                 >
                   {formattedPrice}
                 </div>
               </div>
-              <p className="whitespace-nowrap text-xs min-[360px]:text-sm min-[400px]:text-base sm:text-lg md:text-xl text-slate-700 font-bold tracking-normal text-center">
-                (Puedes pagar en tu moneda local)
-              </p>
             </div>
 
             {/* Divider */}
-            <div className="h-[1px] bg-slate-100 max-w-md mx-auto my-6" />
+            <div className="h-[1px] bg-slate-100 max-w-md mx-auto my-4" />
 
             {/* CTA Button */}
             <div className="max-w-md mx-auto space-y-4">

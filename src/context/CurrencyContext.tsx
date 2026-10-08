@@ -29,7 +29,7 @@ export interface CurrencyContextProps {
 const CurrencyContext = createContext<CurrencyContextProps | undefined>(undefined);
 
 export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Offer fixed at US$ 6,90
+  // Offer fixed at 7€
   const initialGeo = getInitialGeoState();
   const [activeGeo, setActiveGeo] = useState<GeoDetectionResult>(initialGeo);
 
@@ -43,18 +43,20 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   }, []);
 
-  // Formats as US$ X,XX (e.g. 6.9 -> "US$ 6,90", 69 -> "US$ 69,00")
+  // Formats in EUR (e.g. 7 -> "7€", 287 -> "287€")
   const convertAndFormat = useCallback((val: number): string => {
-    const formattedNum = Number(val).toLocaleString('es-ES', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    });
-    return `US$ ${formattedNum}`;
+    const formattedNum = val % 1 === 0
+      ? val.toString()
+      : Number(val).toLocaleString('es-ES', {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        });
+    return `${formattedNum}€`;
   }, []);
 
   const setCountry = useCallback((code: string) => {
     const normalized = normalizeCountry(code);
-    const config = COUNTRY_PRICING[normalized] || COUNTRY_PRICING.US;
+    const config = COUNTRY_PRICING[normalized] || COUNTRY_PRICING.ES || COUNTRY_PRICING.DEFAULT;
     setActiveGeo({
       countryCode: normalized,
       config,
@@ -72,8 +74,8 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
       value={{
         originalPrice: FIXED_OFFER_PRICE,
         convertedPrice: FIXED_OFFER_PRICE,
-        currencyCode: 'USD',
-        currencySymbol: 'US$',
+        currencyCode: 'EUR',
+        currencySymbol: '€',
         formattedPrice: FIXED_OFFER_PRICE_FORMATTED,
         isConverting: false,
         rate: 1,
