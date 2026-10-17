@@ -29,7 +29,7 @@ export interface CurrencyContextProps {
 const CurrencyContext = createContext<CurrencyContextProps | undefined>(undefined);
 
 export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Offer fixed at 7€
+  // Offer fixed at 14 €
   const initialGeo = getInitialGeoState();
   const [activeGeo, setActiveGeo] = useState<GeoDetectionResult>(initialGeo);
 
@@ -43,7 +43,7 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   }, []);
 
-  // Formats in EUR (e.g. 7 -> "7€", 287 -> "287€")
+  // Formats in EUR (e.g. 14 -> "14 €", 287 -> "287 €")
   const convertAndFormat = useCallback((val: number): string => {
     const formattedNum = val % 1 === 0
       ? val.toString()
@@ -51,7 +51,7 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
           minimumFractionDigits: 2,
           maximumFractionDigits: 2,
         });
-    return `${formattedNum}€`;
+    return `${formattedNum} €`;
   }, []);
 
   const setCountry = useCallback((code: string) => {

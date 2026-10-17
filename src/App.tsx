@@ -761,7 +761,7 @@ export default function App() {
                   </span>
                 </span>
                 <span className="bg-emerald-100 text-emerald-700 text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
-                  -97%
+                  -95%
                 </span>
               </div>
               <div className="w-full flex items-center justify-center py-0">
