@@ -16,7 +16,7 @@ export const PRIORITY_IMAGES = [
 export const SECONDARY_IMAGES = [
   'https://i.ibb.co/cX77hXxq/Chat-GPT-Image-29-de-ago-de-2026-20-37-24.png',
   'https://i.ibb.co/XkkxWdZ5/comprimida.png',
-  'https://i.ibb.co/bg3pg300/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png',
+  'https://i.ibb.co/jkMfMkmW/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png',
   'https://i.ibb.co/FLt4HBRX/Chat-GPT-Image-29-de-ago-de-2026-20-46-58.png',
   'https://i.ibb.co/9HCcjhZt/Chat-GPT-Image-24-de-set-de-2026-10-33-16.png',
   'https://i.ibb.co/j9BFPsdd/Ejercicios-Adicionales-de-F-tbol-Sala.png',

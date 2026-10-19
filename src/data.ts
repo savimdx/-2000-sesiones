@@ -167,16 +167,16 @@ export const BONUSES: BonusItem[] = [
   {
     id: "bon-6",
     number: 6,
-    title: "+1000 Lecciones en Video de Fútbol",
+    title: "Lecciones en Video de Fútbol",
     description: "Accede a una videoteca masiva con más de 1000 tareas y ejercicios explicados en movimiento: circuitos, tareas técnicas y táctica en acción.",
     originalPrice: 37,
     tag: "VIDEOTECA COMPLETA (+1000 VIDEOS)",
     image: "/images/bono_1000_videos_nuevo.webp",
-    fallbackImage: "https://i.ibb.co/bg3pg300/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png",
+    fallbackImage: "https://i.ibb.co/jkMfMkmW/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png",
     fallbackSources: [
       "/images/bono_1000_videos_nuevo.webp",
-      "https://i.ibb.co/bg3pg300/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png",
-      "/images/bono_1000_videos.webp"
+      "https://i.ibb.co/jkMfMkmW/Chat-GPT-Image-29-de-ago-de-2026-20-43-32.png",
+      "/images/bono_1000_videos_nuevo.png"
     ]
   },
   {

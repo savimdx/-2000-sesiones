@@ -1,7 +1,7 @@
 /**
  * Fixed Offer Pricing Configuration
  *
- * Offer price is fixed at 14 €
+ * Offer price is fixed at 9 €
  */
 
 export interface CountryPricingConfig {
@@ -16,8 +16,8 @@ export interface CountryPricingConfig {
   flag: string;
 }
 
-export const FIXED_OFFER_PRICE = 14;
-export const FIXED_OFFER_PRICE_FORMATTED = '14 €';
+export const FIXED_OFFER_PRICE = 9;
+export const FIXED_OFFER_PRICE_FORMATTED = '9 €';
 export const FIXED_CROSSED_PRICE_FORMATTED = '287 €';
 
 export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
