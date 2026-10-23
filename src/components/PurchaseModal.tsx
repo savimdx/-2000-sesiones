@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ShieldCheck, Lock, CreditCard, ChevronRight, CheckCircle, Download, BookOpen, Star } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
-import { BONUSES } from '../data';
+import { BONUSES, TOTAL_ORIGINAL_PRICE } from '../data';
 
 interface PurchaseModalProps {
   isOpen: boolean;
@@ -67,7 +67,7 @@ export default function PurchaseModal({ isOpen, onClose }: PurchaseModalProps) {
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 my-5 space-y-2">
               <div className="flex justify-between items-center">
                 <span className="text-xs text-slate-700 font-medium">+2000 Sesiones de Entrenamiento de Fútbol (Digital)</span>
-                <span className="text-xs text-slate-400 line-through">{convertAndFormat(287)}</span>
+                <span className="text-xs text-slate-400 line-through">{convertAndFormat(TOTAL_ORIGINAL_PRICE)}</span>
               </div>
               <div className="flex justify-between items-center text-emerald-600">
                 <span className="text-xs font-semibold">10 Bonos Exclusivos Incluidos (Videos, Manuales y Tareas)</span>
@@ -82,9 +82,6 @@ export default function PurchaseModal({ isOpen, onClose }: PurchaseModalProps) {
                 >
                   {formattedPrice}
                 </span>
-              </div>
-              <div className="text-right text-[11px] text-slate-500 font-medium -mt-1">
-                (Puedes pagar en tu moneda local)
               </div>
             </div>
 

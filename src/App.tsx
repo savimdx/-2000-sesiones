@@ -28,6 +28,8 @@ import {
   HERO_BULLETS,
   BENEFITS,
   BONUSES,
+  CORE_PACK_ORIGINAL_PRICE,
+  TOTAL_ORIGINAL_PRICE,
   TESTIMONIALS,
   FAQS,
   CHECKOUT_URL
@@ -711,7 +713,7 @@ export default function App() {
                 <span>
                   +2000 Sesiones de Entrenamiento de Fútbol Listas para Aplicar{" "}
                   <span className="text-red-500 line-through whitespace-nowrap font-bold">
-                    (Valorado en {convertAndFormat(49)})
+                    (Valorado en {convertAndFormat(CORE_PACK_ORIGINAL_PRICE)})
                   </span>
                 </span>
               </div>
@@ -757,7 +759,7 @@ export default function App() {
                 <span className="flex items-center gap-1.5">
                   <span>Antes</span>
                   <span className="text-red-500 font-extrabold text-xl sm:text-2xl line-through decoration-[2.5px] decoration-red-500">
-                    {convertAndFormat(287)}
+                    {convertAndFormat(TOTAL_ORIGINAL_PRICE)}
                   </span>
                 </span>
                 <span className="bg-emerald-100 text-emerald-700 text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
@@ -767,14 +769,11 @@ export default function App() {
               <div className="w-full flex items-center justify-center py-0">
                 <div
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
-                  className="text-center select-none text-orange-500 font-black tracking-tighter whitespace-nowrap text-5xl min-[360px]:text-6xl min-[420px]:text-7xl sm:text-8xl md:text-9xl lg:text-[9.5rem] leading-none drop-shadow-sm transition-all"
+                  className="text-center select-none text-orange-500 font-black tracking-tighter whitespace-nowrap text-4xl min-[340px]:text-5xl min-[390px]:text-6xl sm:text-7xl md:text-8xl lg:text-[8.5rem] leading-none drop-shadow-sm transition-all"
                 >
                   {formattedPrice}
                 </div>
               </div>
-              <p className="text-xs sm:text-sm text-slate-500 font-medium pt-1">
-                (Puedes pagar en tu moneda local)
-              </p>
             </div>
 
             {/* Divider */}

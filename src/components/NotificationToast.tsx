@@ -8,14 +8,16 @@ interface PurchaseAlert {
 }
 
 const PURCHASE_POOL: PurchaseAlert[] = [
-  { name: "Carlos Mendoza", location: "Madrid, España", timeAgo: "hace 2 min" },
-  { name: "Alejandro Gómez", location: "Buenos Aires, Argentina", timeAgo: "hace 4 min" },
-  { name: "Marcelo Díaz", location: "Barcelona, España", timeAgo: "hace 1 min" },
-  { name: "Diego Herrera", location: "Ciudad de México, México", timeAgo: "hace 5 min" },
-  { name: "Mateo Silva", location: "Bogotá, Colombia", timeAgo: "hace 30 seg" },
-  { name: "Andrés Fernández", location: "Sevilla, España", timeAgo: "hace 7 min" },
-  { name: "Rodrigo Morales", location: "Santiago, Chile", timeAgo: "hace 3 min" },
-  { name: "Sebastián Ramos", location: "Valencia, España", timeAgo: "hace 6 min" }
+  { name: "Carlos Mendoza", location: "Ciudad de México, CDMX", timeAgo: "hace 2 min" },
+  { name: "Alejandro Gómez", location: "Guadalajara, Jalisco", timeAgo: "hace 4 min" },
+  { name: "Marcelo Díaz", location: "Monterrey, Nuevo León", timeAgo: "hace 1 min" },
+  { name: "Diego Herrera", location: "Puebla, Puebla", timeAgo: "hace 5 min" },
+  { name: "Mateo Silva", location: "Querétaro, Qro.", timeAgo: "hace 30 seg" },
+  { name: "Andrés Fernández", location: "Mérida, Yucatán", timeAgo: "hace 7 min" },
+  { name: "Rodrigo Morales", location: "Tijuana, Baja California", timeAgo: "hace 3 min" },
+  { name: "Sebastián Ramos", location: "León, Guanajuato", timeAgo: "hace 6 min" },
+  { name: "Javier Hernández", location: "Toluca, Edo. Méx.", timeAgo: "hace 2 min" },
+  { name: "Eduardo Castillo", location: "Cancún, Quintana Roo", timeAgo: "hace 8 min" }
 ];
 
 export default function NotificationToast() {
@@ -49,7 +51,7 @@ export default function NotificationToast() {
 
   return (
     <div
-      className={`fixed top-16 left-4 z-40 max-w-[210px] bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-xl p-2 shadow-lg transition-all duration-700 ease-out flex items-center gap-2 ${
+      className={`fixed top-16 left-4 z-40 max-w-[235px] bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-xl p-2 shadow-lg transition-all duration-700 ease-out flex items-center gap-2 ${
         visible ? 'translate-y-0 opacity-100 scale-100' : '-translate-y-6 opacity-0 scale-95 pointer-events-none'
       }`}
     >
