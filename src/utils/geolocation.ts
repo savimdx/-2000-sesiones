@@ -11,14 +11,14 @@ export interface CountryPricingConfig {
   price: number;
   formattedPrice: string;
   currencyCode: 'USD';
-  currencySymbol: '$';
+  currencySymbol: 'US$';
   crossedPriceFormatted: string;
   flag: string;
 }
 
 export const FIXED_OFFER_PRICE = 9.9;
-export const FIXED_OFFER_PRICE_FORMATTED = '$9.90';
-export const FIXED_CROSSED_PRICE_FORMATTED = '$287';
+export const FIXED_OFFER_PRICE_FORMATTED = 'US$ 9.90';
+export const FIXED_CROSSED_PRICE_FORMATTED = 'US$ 287';
 
 export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
   US: {
@@ -28,7 +28,7 @@ export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
     price: FIXED_OFFER_PRICE,
     formattedPrice: FIXED_OFFER_PRICE_FORMATTED,
     currencyCode: 'USD',
-    currencySymbol: '$',
+    currencySymbol: 'US$',
     crossedPriceFormatted: FIXED_CROSSED_PRICE_FORMATTED,
     flag: '🇺🇸',
   },
@@ -39,7 +39,7 @@ export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
     price: FIXED_OFFER_PRICE,
     formattedPrice: FIXED_OFFER_PRICE_FORMATTED,
     currencyCode: 'USD',
-    currencySymbol: '$',
+    currencySymbol: 'US$',
     crossedPriceFormatted: FIXED_CROSSED_PRICE_FORMATTED,
     flag: '🌎',
   },

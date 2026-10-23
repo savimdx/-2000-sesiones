@@ -43,7 +43,7 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   }, []);
 
-  // Formats in USD (e.g. 9.9 -> "$9.90", 287 -> "$287")
+  // Formats in USD with US$ (e.g. 9.9 -> "US$ 9.90", 287 -> "US$ 287")
   const convertAndFormat = useCallback((val: number): string => {
     const formattedNum = val % 1 === 0
       ? val.toString()
@@ -51,7 +51,7 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
           minimumFractionDigits: 2,
           maximumFractionDigits: 2,
         });
-    return `$${formattedNum}`;
+    return `US$ ${formattedNum}`;
   }, []);
 
   const setCountry = useCallback((code: string) => {
@@ -75,7 +75,7 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         originalPrice: FIXED_OFFER_PRICE,
         convertedPrice: FIXED_OFFER_PRICE,
         currencyCode: 'USD',
-        currencySymbol: '$',
+        currencySymbol: 'US$',
         formattedPrice: FIXED_OFFER_PRICE_FORMATTED,
         isConverting: false,
         rate: 1,

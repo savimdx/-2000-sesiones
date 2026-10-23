@@ -767,7 +767,7 @@ export default function App() {
               <div className="w-full flex items-center justify-center py-0">
                 <div
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
-                  className="text-center select-none text-orange-500 font-black tracking-tighter whitespace-nowrap text-7xl min-[360px]:text-8xl sm:text-9xl md:text-[8.5rem] lg:text-[9.5rem] leading-none drop-shadow-sm transition-all"
+                  className="text-center select-none text-orange-500 font-black tracking-tighter whitespace-nowrap text-5xl min-[360px]:text-6xl min-[420px]:text-7xl sm:text-8xl md:text-9xl lg:text-[9.5rem] leading-none drop-shadow-sm transition-all"
                 >
                   {formattedPrice}
                 </div>
