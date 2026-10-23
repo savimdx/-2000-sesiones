@@ -772,6 +772,9 @@ export default function App() {
                   {formattedPrice}
                 </div>
               </div>
+              <p className="text-xs sm:text-sm text-slate-500 font-medium pt-1">
+                (Puedes pagar en tu moneda local)
+              </p>
             </div>
 
             {/* Divider */}

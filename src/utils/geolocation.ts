@@ -1,7 +1,7 @@
 /**
  * Fixed Offer Pricing Configuration
  *
- * Offer price is fixed at 9 €
+ * Offer price is fixed at $9.90 (USD)
  */
 
 export interface CountryPricingConfig {
@@ -10,38 +10,38 @@ export interface CountryPricingConfig {
   countryNameFr: string;
   price: number;
   formattedPrice: string;
-  currencyCode: 'EUR';
-  currencySymbol: '€';
+  currencyCode: 'USD';
+  currencySymbol: '$';
   crossedPriceFormatted: string;
   flag: string;
 }
 
-export const FIXED_OFFER_PRICE = 9;
-export const FIXED_OFFER_PRICE_FORMATTED = '9 €';
-export const FIXED_CROSSED_PRICE_FORMATTED = '287 €';
+export const FIXED_OFFER_PRICE = 9.9;
+export const FIXED_OFFER_PRICE_FORMATTED = '$9.90';
+export const FIXED_CROSSED_PRICE_FORMATTED = '$287';
 
 export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
-  ES: {
-    countryCode: 'ES',
-    countryName: 'España / EUR',
-    countryNameFr: 'Espagne / EUR',
+  US: {
+    countryCode: 'US',
+    countryName: 'Estados Unidos / USD',
+    countryNameFr: 'États-Unis / USD',
     price: FIXED_OFFER_PRICE,
     formattedPrice: FIXED_OFFER_PRICE_FORMATTED,
-    currencyCode: 'EUR',
-    currencySymbol: '€',
+    currencyCode: 'USD',
+    currencySymbol: '$',
     crossedPriceFormatted: FIXED_CROSSED_PRICE_FORMATTED,
-    flag: '🇪🇸',
+    flag: '🇺🇸',
   },
   DEFAULT: {
     countryCode: 'DEFAULT',
-    countryName: 'Europa / EUR',
-    countryNameFr: 'Europe / EUR',
+    countryName: 'Internacional / USD',
+    countryNameFr: 'International / USD',
     price: FIXED_OFFER_PRICE,
     formattedPrice: FIXED_OFFER_PRICE_FORMATTED,
-    currencyCode: 'EUR',
-    currencySymbol: '€',
+    currencyCode: 'USD',
+    currencySymbol: '$',
     crossedPriceFormatted: FIXED_CROSSED_PRICE_FORMATTED,
-    flag: '🇪🇺',
+    flag: '🌎',
   },
 };
 
@@ -53,15 +53,15 @@ export interface GeoDetectionResult {
 }
 
 export function normalizeCountry(code?: string | null): string {
-  return 'ES';
+  return 'US';
 }
 
 export function detectFromUrlParams(): GeoDetectionResult | null {
   return {
-    countryCode: 'ES',
-    config: COUNTRY_PRICING.ES,
+    countryCode: 'US',
+    config: COUNTRY_PRICING.US,
     source: 'url_param',
-    rawCountry: 'ES',
+    rawCountry: 'US',
   };
 }
 
@@ -73,8 +73,8 @@ export function saveToCache(_countryCode: string, _rawCountry?: string): void {}
 
 export function detectFromBrowserHeuristics(): GeoDetectionResult {
   return {
-    countryCode: 'ES',
-    config: COUNTRY_PRICING.ES,
+    countryCode: 'US',
+    config: COUNTRY_PRICING.US,
     source: 'default',
     rawCountry: 'standard',
   };
@@ -86,9 +86,9 @@ export async function detectFromNetwork(): Promise<{ countryCode: string; source
 
 export function getInitialGeoState(): GeoDetectionResult {
   return {
-    countryCode: 'ES',
-    config: COUNTRY_PRICING.ES,
+    countryCode: 'US',
+    config: COUNTRY_PRICING.US,
     source: 'default',
-    rawCountry: 'ES',
+    rawCountry: 'US',
   };
 }

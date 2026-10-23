@@ -83,6 +83,9 @@ export default function PurchaseModal({ isOpen, onClose }: PurchaseModalProps) {
                   {formattedPrice}
                 </span>
               </div>
+              <div className="text-right text-[11px] text-slate-500 font-medium -mt-1">
+                (Puedes pagar en tu moneda local)
+              </div>
             </div>
 
             <div className="space-y-4">
