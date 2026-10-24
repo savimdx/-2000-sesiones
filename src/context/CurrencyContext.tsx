@@ -29,7 +29,7 @@ export interface CurrencyContextProps {
 const CurrencyContext = createContext<CurrencyContextProps | undefined>(undefined);
 
 export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  // Offer fixed at MX$228.58
+  // Offer fixed at MX$182.12
   const initialGeo = getInitialGeoState();
   const [activeGeo, setActiveGeo] = useState<GeoDetectionResult>(initialGeo);
 
@@ -43,7 +43,7 @@ export const CurrencyProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }
   }, []);
 
-  // Formats in MXN with MX$ (e.g. 228.58 -> "MX$228.58", 5610 -> "MX$5,610")
+  // Formats in MXN with MX$ (e.g. 182.12 -> "MX$182.12", 5610 -> "MX$5,610")
   const convertAndFormat = useCallback((val: number): string => {
     const formattedNum = val % 1 === 0
       ? Number(val).toLocaleString('en-US')

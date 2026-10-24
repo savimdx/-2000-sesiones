@@ -1,7 +1,7 @@
 /**
  * Fixed Offer Pricing Configuration
  *
- * Offer price is fixed at MX$228.58 (Mexican Pesos - MXN)
+ * Offer price is fixed at MX$182.12 (Mexican Pesos - MXN)
  */
 
 export interface CountryPricingConfig {
@@ -16,8 +16,8 @@ export interface CountryPricingConfig {
   flag: string;
 }
 
-export const FIXED_OFFER_PRICE = 228.58;
-export const FIXED_OFFER_PRICE_FORMATTED = 'MX$228.58';
+export const FIXED_OFFER_PRICE = 182.12;
+export const FIXED_OFFER_PRICE_FORMATTED = 'MX$182.12';
 export const FIXED_CROSSED_PRICE_FORMATTED = 'MX$5,610';
 
 export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
